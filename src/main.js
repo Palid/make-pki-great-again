@@ -15,7 +15,7 @@ function getValueFromEqualsIdPairInHref(hrefText) {
 
 const logoutLink = document.querySelector('a[href="default.asp?wyloguj=tak"] > u > b');
 // If user is logged in
-if (logoutLink.length) {
+if (logoutLink) {
   const reportedBy = logoutLink.innerText.replace('wyloguj: ', '');
 
   const tableRowWithLink = document.querySelectorAll('.tabela_tematow tr:nth-of-type(3n-1) .komentarze_lewy:first-of-type');
@@ -40,5 +40,4 @@ if (logoutLink.length) {
     a.className = 'js-report-me-link';
     item.appendChild(a);
   });
-}
 }
