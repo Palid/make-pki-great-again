@@ -1,8 +1,8 @@
 'use strict';
 
 function findValueInArray(arr, value) {
-    const index = arr.findIndex((item) => {
-    return item.indexOf(value) !== -1
+  const index = arr.findIndex((item) => {
+    return item.indexOf(value) !== -1;
   });
   return arr[index];
 }
@@ -32,7 +32,7 @@ if (logoutLink) {
     const userId = getValueFromEqualsIdPairInHref(findValueInArray(user.href.split('&'), 'id_usr'));
     const userName = user.querySelector('b').innerText;
 
-    const templateHref = `http://sp7pki.iq24.pl/zglos_post.asp?id_komentarza=${userId}&temat=${topic}&grupa=${group}&nr_str=${pageNumber}&nick=${userName}&zglasza=${reportedBy}`
+    const templateHref = `http://sp7pki.iq24.pl/zglos_post.asp?id_komentarza=${userId}&temat=${topic}&grupa=${group}&nr_str=${pageNumber}&nick=${userName}&zglasza=${reportedBy}`;
     const a = document.createElement('a');
     a.href = templateHref;
     a.style = 'color:red; float:right;';
