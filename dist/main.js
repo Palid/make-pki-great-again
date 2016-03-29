@@ -171,7 +171,7 @@ if (logoutLink) {
         item: item
       });
 
-      var templateHref = 'http://sp7pki.iq24.pl/zglos_post.asp?id_komentarza=' + userId + '&temat=' + topic + '&grupa=' + group + '&nr_str=' + pageNumber + '&nick=' + userName + '&zglasza=' + reportedBy;
+      var templateHref = 'http://sp7pki.iq24.pl/zglos_post.asp?id_komentarza=' + postId + '&temat=' + topic + '&grupa=' + group + '&nr_str=' + pageNumber + '&nick=' + userName + '&zglasza=' + reportedBy;
       var a = NODE_BUILDER.reportLink(templateHref);
       item.appendChild(a);
     });

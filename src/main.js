@@ -159,7 +159,7 @@ if (logoutLink) {
       item,
     });
 
-    const templateHref = `http://sp7pki.iq24.pl/zglos_post.asp?id_komentarza=${userId}&temat=${topic}&grupa=${group}&nr_str=${pageNumber}&nick=${userName}&zglasza=${reportedBy}`;
+    const templateHref = `http://sp7pki.iq24.pl/zglos_post.asp?id_komentarza=${postId}&temat=${topic}&grupa=${group}&nr_str=${pageNumber}&nick=${userName}&zglasza=${reportedBy}`;
     const a = NODE_BUILDER.reportLink(templateHref);
     item.appendChild(a);
   });
